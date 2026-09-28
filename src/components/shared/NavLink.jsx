@@ -1,0 +1,20 @@
+"use client";
+
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import React from "react";
+
+export default function NavLink({ href, className, children }) {
+  const pathname = usePathname();
+
+  const isActive = href === pathname;
+
+  return (
+    <Link
+      href={href}
+      className={`${isActive ? "border-b-2 border-purple-500" : ""} ${className}`}
+    >
+      {children}
+    </Link>
+  );
+}
