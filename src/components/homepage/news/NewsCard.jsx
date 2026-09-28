@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { CiBookmark, CiShare2, CiStar } from "react-icons/ci";
+import { CiBookmark, CiShare2 } from "react-icons/ci";
 import { FaEye, FaStar } from "react-icons/fa";
 
 const NewsCard = ({ news }) => {
